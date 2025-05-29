@@ -14,8 +14,10 @@ export default {
     return [
       "/",
       "about",
-      "/products",
-      ...products.map((product: { id: number }) => `products/${product.id}`),
+      "/static-products",
+      ...products.map(
+        (product: { id: number }) => `static-products/${product.id}`
+      ),
     ];
   },
 } satisfies Config;
