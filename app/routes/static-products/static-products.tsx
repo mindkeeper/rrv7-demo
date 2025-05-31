@@ -45,7 +45,7 @@ export default function StaticProducts({
       <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
         {products?.length ? (
           products.map((product) => (
-            <Link to={`/products/${product.id}`} key={product.id}>
+            <Link to={`/static-products/${product.id}`} key={product.id}>
               <Card>
                 <CardHeader>
                   <CardTitle>{product.title}</CardTitle>
